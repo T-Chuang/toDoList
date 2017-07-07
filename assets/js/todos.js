@@ -2,9 +2,14 @@
 $("input[type='text']").keypress(function(event){
     if(event.which === 13){
         var newToDo = ($(this).val());
-        $("ul").append("<li><span>[ ]</span> " + newToDo+ "</li>");
+        $("ul").append("<li><span><i class='fa fa-trash'></i></span> " + newToDo+ "</li>");
         $(this).val("");
     }
+})
+
+//Toggle new item input bar
+$(".fa-chevron-down").click(function(){
+    $("input[type='text']").fadeToggle(); 
 })
 
 //Toggle completed items
@@ -19,3 +24,4 @@ $("ul").on("click", "span", function(event){
     })
     event.stopPropagation();
 })
+
