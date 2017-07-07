@@ -1,0 +1,14 @@
+body {
+    background-color: orange;
+}
+
+#container {
+    background-color: silver;
+    width: 360px;
+    margin: 50px auto;
+}
+
+.complete {
+    color: rgb(128, 128, 128);
+    text-decoration: line-through;
+}
